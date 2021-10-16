@@ -28,7 +28,7 @@
             <option value="tela-bison">TELA DO M.BISON</option>
         </select>
 
-        <select name="pers" id="">
+        <select name="pers" id="pers1">
             <option value="selecionar_p">SELECIONE UM PERSONAGEM</option>
             <option value="ryu">RYU</option>
             <option value="ken">KEN</option>
@@ -41,15 +41,28 @@
             <option value="vega">VEGA</option>
             <option value="bison">M.BISON</option>
         </select>
-        <button>INCIAR JOGO</button>
+
+        <select name="pers" id="pers2">
+            <option value="selecionar_p2">SELECIONE UM PERSONAGEM</option>
+            <option value="ryu2">RYU</option>
+            <option value="ken2">KEN</option>
+            <option value="guile2">GUILE</option>
+            <option value="chunli2">CHUN-LI</option>
+            <option value="zangief2">ZANGIEF</option>
+            <option value="honda2">HONDA</option>
+            <option value="dhalsim2">DHALSIM</option>
+            <option value="balrog2">BALROG</option>
+            <option value="vega2">VEGA</option>
+            <option value="bison2">M.BISON</option>
+        </select><br>
+
+        <button onclick="inciar_game()">INCIAR JOGO</button>
     </div>
     <div id="fundo">
-        <div id="vida_1"></div>
-        <div id="vida_2"></div>
+        <div id="vida_1" onclick="tirar_lutador1()"></div>
+        <div id="vida_2" onclick="tirar_lutador2()"></div>
         <div id="lutador_1"></div>
         <div id="lutador_2"></div>
-        
-        <br>
     </div>
 </body>
 
