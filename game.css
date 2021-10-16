@@ -34,7 +34,7 @@ img{
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 88vh;
+  height: 91vh;
 }
 #lutador_1 {
     float: left;
@@ -54,15 +54,17 @@ img{
 }
 #vida_lt1{
     float: left;
-    width: 50%;
+    width: 100%;
     height: 10%;
     background-color: red;
-    margin-top: 2% ;
+    margin-top: 25%;
+    position: fixed;
 }
 #vida_lt2{
     float: right;
-    width: 50%;
+    width: 100%;
     height: 10%;
     background-color: green;
-    margin-top: 2%;
+    margin-top: 30%;
+    position: fixed;
 }
