@@ -15,18 +15,18 @@
     <h1>STREET FIGHTER <span>II</span></h1>
     <div class="header">
         <select name="telas" id="telas_sf" onchange="comecar_telas(this.value)">
-            <option value="selecionar_t">SELECIONE UMA TELA</option>
+            <option value=" ">SELECIONE UMA TELA</option>
             <option value="imgs/telas/ryustage.gif">TELA DO RYU</option>
             <option value="imgs/telas/kenstage.gif">TELA DO KEN</option>
-            <option value="imgs/telas/guilestage.png">TELA DO GUILE</option>
+            <option value="imgs/telas/guilestage.gif">TELA DO GUILE</option>
             <option value="imgs/telas/chunlistage.gif">TELA DA CHUN-LI</option>
-            <option value="imgs/telas/blankastage.jpg">TELA DO BLANKA</option>
+            <option value="imgs/telas/blankastage.gif">TELA DO BLANKA</option>
             <option value="imgs/telas/zangiegstage.gif">TELA DO ZANGIEF</option>
-            <option value="imgs/telas/hondastage.jpg">TELA DO HONDA</option>
+            <option value="imgs/telas/hondastage.gif">TELA DO HONDA</option>
             <option value="imgs/telas/dhalsimstage.gif">TELA DO DHALSIM</option>
-            <option value="imgs/telas/balrogstage.jpg">TELA DO BALROG</option>
+            <option value="imgs/telas/balrogstage.gif">TELA DO BALROG</option>
             <option value="imgs/telas/vegastage.gif">TELA DO VEGA</option>
-            <option value="imgs/telas/sagatstage.jpg">TELA DO SAGAT</option>
+            <option value="imgs/telas/sagatstage.gif">TELA DO SAGAT</option>
             <option value="imgs/telas/bisonstage.gif">TELA DO M.BISON</option>
         </select>
 
@@ -61,12 +61,14 @@
             <option value="imgs/personagens/sagat.gif">SAGAT</option>
             <option value="imgs/personagens/bison.gif">M.BISON</option>
         </select>
+        <button type="reset">NOVO JOGO</button>
     </div>
     <div id="fundo">
-        <div id="vida_lt1"></div>
+        <div id="lutador_1" onclick="tirar_vida1()"></div>
+        <div id="lutador_2" onclick="tirar_vida2()"></div><br><br>
+        <div id="vida_lt1"></div><br><br>
         <div id="vida_lt2"></div>
-        <div id="lutador_1"></div>
-        <div id="lutador_2"></div>
+
     </div>
 </body>
 
