@@ -12,10 +12,7 @@ function inciar_game() {
     } else if (lutador2 == 'selecionar_p2') {
         alert("VOCÊ DEVE ESCOLHER DOIS LUTADORES PARA CONTINUAR")
     }
-    
-    
-    
     else {
         fundo.style.display = 'block'
     }
-} 
+}
