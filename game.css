@@ -24,15 +24,19 @@ button{
     width: 100%;
     margin: 0 auto 0 auto;
 }
+img{
+    height: 100%;
+    width: 100%;
+}
 #fundo {
   display: none;
-  background-image: var(tela);
+  background-image: url();
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 80vh;
 }
-#lutador_1{
+#lutador_1 {
     float: left;
     width: 30%;
     height: 50%;
