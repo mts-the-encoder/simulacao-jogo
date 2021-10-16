@@ -14,59 +14,57 @@
 <body>
     <h1>STREET FIGHTER <span>II</span></h1>
     <div class="header">
-        <select name="telas" id="telas_sf">
+        <select name="telas" id="telas_sf" onchange="comecar_telas(this.value)">
             <option value="selecionar_t">SELECIONE UMA TELA</option>
-            <option value="tela-ryu">TELA DO RYU</option>
-            <option value="tela-ken">TELA DO KEN</option>
-            <option value="tela-guile">TELA DO GUILE</option>
-            <option value="tela-chun">TELA DA CHUN-LI</option>
-            <option value="tela-blanka">TELA DO BLANKA</option>
-            <option value="tela-zangief">TELA DO ZANGIEF</option>
-            <option value="tela-honda">TELA DO HONDA</option>
-            <option value="tela-dhalsim">TELA DO DHALSIM</option>
-            <option value="tela-balrog">TELA DO BALROG</option>
-            <option value="tela-vega">TELA DO VEGA</option>
-            <option value="tela-sagat">TELA DO SAGAT</option>
-            <option value="tela-bison">TELA DO M.BISON</option>
+            <option value="imgs/telas/ryustage.gif">TELA DO RYU</option>
+            <option value="imgs/telas/kenstage.gif">TELA DO KEN</option>
+            <option value="imgs/telas/guilestage.png">TELA DO GUILE</option>
+            <option value="imgs/telas/chunlistage.gif">TELA DA CHUN-LI</option>
+            <option value="imgs/telas/blankastage.jpg">TELA DO BLANKA</option>
+            <option value="imgs/telas/zangiegstage.gif">TELA DO ZANGIEF</option>
+            <option value="imgs/telas/hondastage.jpg">TELA DO HONDA</option>
+            <option value="imgs/telas/dhalsimstage.gif">TELA DO DHALSIM</option>
+            <option value="imgs/telas/balrogstage.jpg">TELA DO BALROG</option>
+            <option value="imgs/telas/vegastage.gif">TELA DO VEGA</option>
+            <option value="imgs/telas/sagatstage.jpg">TELA DO SAGAT</option>
+            <option value="imgs/telas/bisonstage.gif">TELA DO M.BISON</option>
         </select>
 
-        <select name="pers" id="pers1">
+        <select name="pers" id="pers1" onchange="comecar_lut1(this.value)">
             <option value="selecionar_p">SELECIONE UM PERSONAGEM</option>
-            <option value="ryu">RYU</option>
-            <option value="ken">KEN</option>
-            <option value="guile">GUILE</option>
-            <option value="chunli">CHUN-LI</option>
-            <option value="blanka">BLANKA</option>
-            <option value="zangief">ZANGIEF</option>
-            <option value="honda">HONDA</option>
-            <option value="dhalsim">DHALSIM</option>
-            <option value="balrog">BALROG</option>
-            <option value="vega">VEGA</option>
-            <option value="sagat">SAGAT</option>
-            <option value="bison">M.BISON</option>
+            <option value="imgs/personagens/ryu.gif">RYU</option>
+            <option value="imgs/personagens/ken.gif">KEN</option>
+            <option value="imgs/personagens/guile.gif">GUILE</option>
+            <option value="imgs/personagens/chun-li.gif">CHUN-LI</option>
+            <option value="imgs/personagens/blanka.gif">BLANKA</option>
+            <option value="imgs/personagens/zangief.gif">ZANGIEF</option>
+            <option value="imgs/personagens/ehonda.gif">HONDA</option>
+            <option value="imgs/personagens/dhalsim.gif">DHALSIM</option>
+            <option value="imgs/personagens/balrog.gif">BALROG</option>
+            <option value="imgs/personagens/vega.gif">VEGA</option>
+            <option value="imgs/personagens/sagat.gif">SAGAT</option>
+            <option value="imgs/personagens/bison.gif">M.BISON</option>
         </select>
 
-        <select name="pers" id="pers2">
+        <select name="pers" id="pers2" onchange="comecar_lut2(this.value)">
             <option value="selecionar_p2">SELECIONE UM PERSONAGEM</option>
-            <option value="ryu2">RYU</option>
-            <option value="ken2">KEN</option>
-            <option value="guile2">GUILE</option>
-            <option value="chunli2">CHUN-LI</option>
-            <option value="blanka2">BLANKA</option>
-            <option value="zangief2">ZANGIEF</option>
-            <option value="honda2">HONDA</option>
-            <option value="dhalsim2">DHALSIM</option>
-            <option value="balrog2">BALROG</option>
-            <option value="vega2">VEGA</option>
-            <option value="sagat2">SAGAT</option>
-            <option value="bison2">M.BISON</option>
-        </select><br>
-
-        <button onclick="inciar_game()">INCIAR JOGO</button>
+            <option value="imgs/personagens/ryu.gif">RYU</option>
+            <option value="imgs/personagens/ken.gif">KEN</option>
+            <option value="imgs/personagens/guile.gif">GUILE</option>
+            <option value="imgs/personagens/chun-li.gif">CHUN-LI</option>
+            <option value="imgs/personagens/blanka.gif">BLANKA</option>
+            <option value="imgs/personagens/zangief.gif">ZANGIEF</option>
+            <option value="imgs/personagens/ehonda.gif">HONDA</option>
+            <option value="imgs/personagens/dhalsim.gif">DHALSIM</option>
+            <option value="imgs/personagens/balrog.gif">BALROG</option>
+            <option value="imgs/personagens/vega.gif">VEGA</option>
+            <option value="imgs/personagens/sagat.gif">SAGAT</option>
+            <option value="imgs/personagens/bison.gif">M.BISON</option>
+        </select>
     </div>
     <div id="fundo">
-        <div id="vida_1" onclick="tirar_lutador1()"></div>
-        <div id="vida_2" onclick="tirar_lutador2()"></div>
+        <div id="vida_lt1"></div>
+        <div id="vida_lt2"></div>
         <div id="lutador_1"></div>
         <div id="lutador_2"></div>
     </div>
