@@ -21,6 +21,22 @@ function comecar_lut2(imgPath) {
 
     lutador_2.style.display = 'block';
 }
+function novo_jogo(){
+    var tela = telas_sf.value
+    var player1 = pers1.value
+    var player2 = pers2.value
+
+    if (tela == '-'){
+        alert('VOCÊ DEVE SELECIONAR UMA TELA')
+    } else if (player1 == 'selecionar_p') {
+        alert('VOCÊ DEVE ESCOLHER DOIS LUTADORES')
+    }
+    else if (player1 == 'selecionar_p2') {
+        alert('VOCÊ DEVE ESCOLHER DOIS LUTADORES')
+    } else {
+        vida_lt1.style.display = 'block'
+        vida_lt2.style.display = 'block'
+    }
 function tirar_vida1() {
     var lutador = pers2.value
     vida_2 = vida_2 - 5;
