@@ -21,12 +21,12 @@ function comecar_lut2(imgPath) {
 
     lutador_2.style.display = 'block';
 }
-function novo_jogo(){
+function novo_jogo() {
     var tela = telas_sf.value
     var player1 = pers1.value
     var player2 = pers2.value
 
-    if (tela == '-'){
+    if (tela == '-') {
         alert('VOCÊ DEVE SELECIONAR UMA TELA')
     } else if (player1 == 'selecionar_p') {
         alert('VOCÊ DEVE ESCOLHER DOIS LUTADORES')
@@ -37,6 +37,8 @@ function novo_jogo(){
         vida_lt1.style.display = 'block'
         vida_lt2.style.display = 'block'
     }
+
+}
 function tirar_vida1() {
     var lutador = pers2.value
     vida_2 = vida_2 - 5;
@@ -101,6 +103,7 @@ function tirar_vida2() {
         lutador_1.innerHTML = '<img src="imgs/derrotados/zangiefderrotado.gif">'
     }
 }
+
 function revanche() {
     location.reload();
 }
