@@ -85,3 +85,6 @@ function tirar_vida2() {
         lutador_1.innerHTML = '<img src="imgs/derrotados/zangiefderrotado.gif">'
     }
 }
+function revanche() {
+    location.reload();
+}
