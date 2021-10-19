@@ -10,11 +10,12 @@
 
     <title>STREET FIGHTER II</title>
 </head>
+
 <body>
     <h1>STREET FIGHTER <span>II</span></h1>
     <div class="header">
         <select name="telas" id="telas_sf" onchange="comecar_telas(this.value)">
-            <option value=" ">SELECIONE UMA TELA</option>
+            <option value="-">SELECIONE UMA TELA</option>
             <option value="imgs/telas/ryustage.gif">TELA DO RYU</option>
             <option value="imgs/telas/kenstage.gif">TELA DO KEN</option>
             <option value="imgs/telas/guilestage.gif">TELA DO GUILE</option>
@@ -68,7 +69,5 @@
         <div id="lutador_2" onclick="tirar_vida2()"></div><br><br>
         <div id="vida_lt1"></div><br><br>
         <div id="vida_lt2"></div>
-
     </div>
 </body>
-</html>
