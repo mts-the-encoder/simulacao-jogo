@@ -6,13 +6,13 @@ function comecar_telas(imgPath) {
     fundo.style.backgroundImage = 'url(' + imgPath + ')';
 
     fundo.style.display = 'block';
+
 }
 function comecar_lut1(imgPath) {
     var lutador_1 = document.getElementById('lutador_1');
     lutador_1.innerHTML = '<img src=' + imgPath + '>'
 
     lutador_1.style.display = 'block';
-
 
 }
 function comecar_lut2(imgPath) {
